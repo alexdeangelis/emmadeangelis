@@ -31,6 +31,9 @@ add_theme_support( 'title-tag' );
 //Post Thumbnails support
 add_theme_support( 'post-thumbnails' );
 
+// ACF Block support
+include __DIR__ . '/blocks/init.php';
+
 // Kernl.us Updater
 require 'kernl-update-checker/kernl-update-checker.php';
 $MyUpdateChecker = Puc_v4_FactoryKernl::buildUpdateChecker(
@@ -38,3 +41,8 @@ $MyUpdateChecker = Puc_v4_FactoryKernl::buildUpdateChecker(
     __FILE__,
     'emmadeangelis'
 );
+
+add_action( 'admin_init', 'disable_autosave' );
+function disable_autosave() {
+wp_deregister_script( 'autosave' );
+}
