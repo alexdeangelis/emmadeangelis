@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Hero Block Template.
+ * Text Complex Block Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -10,13 +10,13 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'hero-' . $block['id'];
+$id = 'text-complex-' . $block['id'];
 if( !empty($block['anchor']) ) {
     $id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'hero';
+$className = 'text-complex';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -30,7 +30,7 @@ $text_color = get_field('text_colour');
 
 ?>
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-    <h1>This is a hero block!</h1>
+    <h1>This is a text complex block!</h1>
     <style type="text/css">
         #<?php echo $id; ?> {
             background: <?php echo $background_color; ?>;
