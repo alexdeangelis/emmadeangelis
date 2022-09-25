@@ -44,5 +44,33 @@ $MyUpdateChecker = Puc_v4_FactoryKernl::buildUpdateChecker(
 
 add_action( 'admin_init', 'disable_autosave' );
 function disable_autosave() {
-wp_deregister_script( 'autosave' );
+	wp_deregister_script( 'autosave' );
 }
+
+add_action('acf/init', 'my_acf_op_init');
+function my_acf_op_init() {
+
+    // Check function exists.
+    if( function_exists('acf_add_options_page') ) {
+
+        // Register options page.
+        acf_add_options_page(array(
+            'page_title'    => __('Site Settings'),
+            'menu_title'    => __('Site Settings'),
+            'menu_slug'     => 'site-settings',
+            'capability'    => 'edit_posts',
+            'redirect'      => false
+        ));
+    }
+}
+
+add_filter( 'block_categories_all' , function( $categories ) {
+
+    // Adding a new category.
+	$categories[] = array(
+		'slug'  => 'emmas-rows',
+		'title' => 'Emma\'s Rows'
+	);
+
+	return $categories;
+} );

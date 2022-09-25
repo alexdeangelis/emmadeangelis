@@ -12,7 +12,7 @@ function my_acf_init_block_types() {
             'title'             => __('Hero'),
             'description'       => __('A custom hero block.'),
             'render_template'   => 'blocks/render/hero.php',
-            'category'          => 'formatting',
+            'category'          => 'emmas-rows',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'hero', 'quote' ),
         ));
@@ -23,7 +23,7 @@ function my_acf_init_block_types() {
             'title'             => __('Text Complex'),
             'description'       => __('A custom text complex block.'),
             'render_template'   => 'blocks/render/text-complex.php',
-            'category'          => 'formatting',
+            'category'          => 'emmas-rows',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'text-complex', 'quote' ),
         ));
@@ -34,7 +34,7 @@ function my_acf_init_block_types() {
             'title'             => __('Icon Columns'),
             'description'       => __('A custom icon columns block.'),
             'render_template'   => 'blocks/render/icon-columns.php',
-            'category'          => 'formatting',
+            'category'          => 'emmas-rows',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'icon-columns', 'quote' ),
         ));
@@ -45,7 +45,7 @@ function my_acf_init_block_types() {
             'title'             => __('Form'),
             'description'       => __('A custom form block.'),
             'render_template'   => 'blocks/render/form.php',
-            'category'          => 'formatting',
+            'category'          => 'emmas-rows',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'form', 'quote' ),
         ));
@@ -56,7 +56,7 @@ function my_acf_init_block_types() {
             'title'             => __('Articles'),
             'description'       => __('A custom articles block.'),
             'render_template'   => 'blocks/render/articles.php',
-            'category'          => 'formatting',
+            'category'          => 'emmas-rows',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'articles', 'quote' ),
         ));
