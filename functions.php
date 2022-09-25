@@ -31,6 +31,9 @@ add_theme_support( 'title-tag' );
 //Post Thumbnails support
 add_theme_support( 'post-thumbnails' );
 
+// ACF Field Groups support
+include __DIR__ . '/fields/groups.php';
+
 // ACF Block support
 include __DIR__ . '/blocks/init.php';
 
