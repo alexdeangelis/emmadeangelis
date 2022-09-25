@@ -1,6 +1,7 @@
 <?php
 
 // Global fields groups
+include __DIR__ . '/groups/site-settings.php';
 include __DIR__ . '/groups/contact-details.php';
 
 // Row field groups
