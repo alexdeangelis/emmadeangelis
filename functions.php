@@ -12,7 +12,7 @@ function emma_scripts() {
 	/*Font Awesome*/
 	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v6.1.2/css/all.css' );
 	/*Basic Styles*/
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/dist/style.css', array(), '1.0.4' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/dist/style.css', array(), '1.0.5' );
 }
 add_action( 'wp_enqueue_scripts', 'emma_scripts' );
 
