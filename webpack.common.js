@@ -5,7 +5,8 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    theme: './src/theme.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -31,6 +32,7 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
           'css-loader',
+          'postcss-loader',
           // Compiles Sass to CSS
           'sass-loader'
         ]
