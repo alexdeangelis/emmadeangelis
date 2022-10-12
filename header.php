@@ -14,4 +14,5 @@
 
         <header>
             <?php include __DIR__ . '/template-parts/header/navbar.php'; ?>
+            <?php include __DIR__ . '/template-parts/header/mobile_menu.php'; ?>
         </header>
