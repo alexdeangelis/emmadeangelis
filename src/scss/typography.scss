@@ -6,8 +6,28 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.header__mobile-menu li {
   font-family: $headingFont;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2.2rem;
+}
+h5 {
+  font-size: 1.6rem;
+}
+h6 {
+  font-size: 1.4rem;
 }
 
 p,
@@ -16,5 +36,6 @@ button,
 a.button,
 input,
 label {
-    font-family: $textFont;
+  font-family: $textFont;
+  font-size:1.6rem;
 }
