@@ -11,7 +11,9 @@ $logo = get_field('logo', 'option');
                 <div class="header__navbar__inner">
                     <?php if ($logo) { ?>
                     <div class="header__navbar__logo">
-                        <?php echo wp_get_attachment_image($logo, 'large'); ?>
+                        <a href="<?php echo get_site_url(); ?>" title="Home">
+                            <?php echo wp_get_attachment_image($logo, 'large'); ?>
+                        </a>
                     </div>
                     <?php } ?>
                     <div class="header__navbar__hamburger d-lg-none">
