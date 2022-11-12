@@ -1,0 +1,56 @@
+footer {
+  > * {
+    padding: 1.2rem 0;
+  }
+  .footer__main {
+    background-color: lightgrey;
+    .footer__main__quicklinks {
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+  .footer__bar {
+    background-color: darkgrey;
+    .footer__bar__copyright {
+      .footer__bar__copyright__logo {
+        img {
+          max-width:10rem;
+        }
+      }
+    }
+    .footer__bar__gdpr {
+      ul {
+        padding:0;
+        margin:0;
+        display:flex;
+        li {
+          list-style-type: none;
+          font-size:1.2rem;
+          border-right: 0.1rem solid black;
+          line-height:1;
+          padding: 0 0.5rem;
+          &:first-child {
+            padding-left:0;
+          }
+          &:last-child {
+            border-right:none;
+            padding-right:0;
+          }
+          a {
+            text-decoration: none;
+            color:inherit;
+          }
+        }
+      }
+    }
+  }
+}

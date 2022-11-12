@@ -1,6 +1,6 @@
 <?php
 
-$logo = get_field('logo', 'option');
+$logo = get_field('logo', 'option') ?? false;
 
 ?>
 

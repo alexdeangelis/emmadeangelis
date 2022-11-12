@@ -1,4 +1,6 @@
+@import 'colours';
 header {
+  padding: 1.2rem 0;
   .header__navbar {
     .header__navbar__inner {
       display: flex;
@@ -6,8 +8,8 @@ header {
       justify-content: space-between;
       .header__navbar__logo {
         max-width: 100px;
-        @media (min-width:992px) {
-          max-width:200px;
+        @media (min-width: 992px) {
+          max-width: 200px;
         }
       }
       .header__navbar__hamburger {
@@ -89,21 +91,21 @@ header {
         }
       }
       .header__navbar__menu {
-        @media (min-width:992px) {
+        @media (min-width: 992px) {
           ul {
-            padding:0;
-            margin:0;
-            display:flex;
+            padding: 0;
+            margin: 0;
+            display: flex;
             li {
               list-style-type: none;
-              margin-right:3.6rem;
-              font-size:2.2rem;
+              margin-right: 3.6rem;
+              font-size: 2.2rem;
               &:last-child {
-                margin-right:0;
+                margin-right: 0;
               }
               a {
-                color:inherit;
-                text-decoration: none; 
+                color: inherit;
+                text-decoration: none;
               }
             }
           }
@@ -121,11 +123,11 @@ header {
     background-color: grey;
     z-index: 3;
     opacity: 0;
-    visibility:hidden;
+    visibility: hidden;
     transition: visibility 0.4s, opacity 0.4s;
     &.open {
       opacity: 1;
-      visibility:visible;
+      visibility: visible;
       transition: visibility 0.4s, opacity 0.4s;
     }
     .header__mobile-menu__inner {
@@ -135,9 +137,12 @@ header {
         li {
           list-style-type: none;
           text-align: center;
-          color: white;
-          font-size:2.2rem;
-          margin:3rem 0;
+          color: $white;
+          font-size: 2.2rem;
+          margin: 3rem 0;
+          &.highlight {
+            color: $highlight;
+          }
           a {
             text-decoration: none;
             color: inherit;

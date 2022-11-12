@@ -2,6 +2,7 @@
 function register_menus() {
     register_nav_menu('main-menu',__( 'Main Menu' ));
     register_nav_menu('footer-menu',__( 'Footer Menu' ));
+    register_nav_menu('gdpr-menu',__( 'GDPR Menu' ));
 }
 add_action( 'init', 'register_menus' );
 
