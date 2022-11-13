@@ -1,6 +1,8 @@
 @import 'colours';
+@import 'breakpoints';
+
 header {
-  padding: 1.2rem 0;
+  padding: 1.6rem 0;
   .header__navbar {
     .header__navbar__inner {
       display: flex;
@@ -8,7 +10,7 @@ header {
       justify-content: space-between;
       .header__navbar__logo {
         max-width: 100px;
-        @media (min-width: 992px) {
+        @media (min-width: $medium) {
           max-width: 200px;
         }
       }
@@ -91,7 +93,7 @@ header {
         }
       }
       .header__navbar__menu {
-        @media (min-width: 992px) {
+        @media (min-width: $medium) {
           ul {
             padding: 0;
             margin: 0;

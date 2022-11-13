@@ -12,7 +12,7 @@ $logo = get_field('logo', 'option') ?? false;
                     <div class="footer__main__contact">
                         <h3>Ready to talk?</h3>
                         <p>Get in touch with me to talk about your marketing plans today.</p>
-                        <a class="btn btn-primary" href="/contact" role="button">Link</a>
+                        <a class="btn" href="/contact" role="button">Link</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-5 col-lg-4 col-xl-3">
@@ -40,7 +40,7 @@ $logo = get_field('logo', 'option') ?? false;
                         <?php } ?>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 d-flex align-items-center justify-content-end">
                     <div class="footer__bar__gdpr">
                         <?php wp_nav_menu( array( 'theme_location' => 'gdpr-menu' ) ); ?>
                     </div>
